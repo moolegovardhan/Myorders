@@ -28,6 +28,7 @@ a {
 <body>
 	<form action="home" method="post">
 		<div id="demo">
+		<a href="www.flipkart.com">click here</a>
 			<table>
 				<td class="a"><a href="product">Products</a></td>
 				<td class="a"><a href="orderview">Orders</a></td>
