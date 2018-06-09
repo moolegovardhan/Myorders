@@ -1,0 +1,6 @@
+com\moole\test\ProductForm.class
+com\moole\test\ProductPageServlet.class
+com\moole\test\ProductServlet.class
+com\moole\test\OrderServlet.class
+com\moole\test\SaveOrderServlet.class
+com\moole\test\OrderForm.class
