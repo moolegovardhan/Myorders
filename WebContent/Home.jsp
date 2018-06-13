@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>online shopping</title>
+<title>online shopping application</title>
 
 <style>
 table td {
