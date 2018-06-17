@@ -6,11 +6,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<!-- <scm> <url>http://www.svn.com</url> <connection>scm:svn:http://localhost:8080/svn/jrepo/trunk/ 
-		Framework</connection> <developerConnection>scm:svn:${username}/${password}@localhost:8080: 
-		common_core_api:1101:code</developerConnection> </scm> <distributionManagement> 
-		<snapshotRepository> <id>nexus-snapshots</id> <url>http://localhost:8080/</url> 
-		</snapshotRepository> </distributionManagement> -->
+	
 
 	<dependencies>
 		<dependency>
@@ -60,7 +56,7 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat9-maven-plugin</artifactId>
 				<version>2.2</version>
@@ -71,7 +67,7 @@
 					<password>s3cret</password>
 					<path>/MyOrders</path>
 				</configuration>
-			</plugin>
+			</plugin> -->
 			
 		</plugins>
 	</build>
