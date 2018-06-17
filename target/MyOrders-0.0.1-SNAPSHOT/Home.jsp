@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>online shopping</title>
+<title>online shopping application</title>
 
 <style>
 table td {
@@ -28,7 +28,7 @@ a {
 <body>
 	<form action="home" method="post">
 		<div id="demo">
-		<a href="www.flipkart.com">click here</a>
+		
 			<table>
 				<td class="a"><a href="product">Products</a></td>
 				<td class="a"><a href="orderview">Orders</a></td>
