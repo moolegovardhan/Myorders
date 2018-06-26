@@ -6,7 +6,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	
 
 	<dependencies>
 		<dependency>
@@ -56,18 +55,16 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-			<!-- <plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat9-maven-plugin</artifactId>
-				<version>2.2</version>
-				<configuration>
-					<url>http://localhost:8080/manager/text</url>
-					<server>TomcatServer</server>
-					<username>maanger</username>
-					<password>s3cret</password>
-					<path>/MyOrders</path>
-				</configuration>
-			</plugin> -->
+			<plugin>
+		<groupId>org.apache.tomcat.maven</groupId>
+		<artifactId>tomcat7-maven-plugin</artifactId>
+		<version>2.2</version>
+		<configuration>
+			<url>http://localhost:8080/manager/text</url>
+			<server>TomcatServer</server>
+			<path>/MyOrders</path>
+		</configuration>
+	</plugin>
 			
 		</plugins>
 	</build>
