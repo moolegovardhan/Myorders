@@ -9,13 +9,13 @@ node{
       sh "${mvnCMD} clean package"
    }
    stage('Build Docker Iamge'){
-     sh 'docker build -t moolegovardhan/myOrders:1.0 .'
+     sh 'docker build -t moolegovardhan/myorders:1.0 .'
    }
    stage('push Docker Iamge'){
       withCredentials([string(credentialsId: 'dockerpwd', variable: 'dockerHubPwd')]) {
          sh "docker login -u moolegovardhan -p ${dockerHubPwd}"
       }
-      sh 'docker push moolegovardhan/myOrders:1.0'
+      sh 'docker push moolegovardhan/myorders:1.0'
    }
    
 }
