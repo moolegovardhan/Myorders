@@ -19,7 +19,7 @@ node{
       echo "docker images push to docker hub"
    }
    stage('Run Image'){
-    sh "docker run -d -p 8090:8090 --name myorders moolegovardhan/myorders:1.1"
+    sh "docker run -d -p -rm 8080:8080 --name myorders moolegovardhan/myorders:1.1"
       echo "Application started on port"  
    }
    
