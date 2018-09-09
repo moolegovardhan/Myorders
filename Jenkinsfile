@@ -16,6 +16,12 @@ node{
          sh "docker login -u moolegovardhan -p ${dockerHubPwd}"
       }
       sh 'docker push moolegovardhan/myorders:1.0'
+      echo "docker images push to docker hub"
    }
+   stage('Run Image'){
+    sh "docker run -d --rm -p 8090:8090 --name myorders moolegovardhan/myorders:1.1"
+      echo "Application started on port"  
+   }
+   
    
 }
