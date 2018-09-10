@@ -26,6 +26,7 @@ a {
 </style>
 </head>
 <body>
+<h1>Welcome to Mykart</h1>
 	<form action="home" method="post">
 		<div id="demo">
 		
