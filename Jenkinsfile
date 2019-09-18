@@ -9,6 +9,8 @@ node{
       def mvnCMD = "${mvnHome}/bin/mvn"
       bat "${mvnCMD} clean install package"
    }
-   
+   stage('Build Docker Iamge'){
+     sh 'docker build -t moolegovardhan/myorders:2.0.0 .'
+   }
    
 }
