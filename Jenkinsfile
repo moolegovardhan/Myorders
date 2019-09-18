@@ -10,7 +10,7 @@ node{
       bat "${mvnCMD} clean install package"
    }
    stage('Build Docker Iamge'){
-     sh 'docker build -t moolegovardhan/myorders:2.0.0 .'
+     bat 'docker build -t moolegovardhan/myorders:2.0.0 .'
    }
    
 }
