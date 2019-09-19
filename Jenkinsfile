@@ -7,10 +7,10 @@ node{
       // Get maven home path
       def mvnHome =  tool name: 'Maven-3', type: 'maven' 
       def mvnCMD = "${mvnHome}/bin/mvn"
-      sh "${mvnCMD} clean install package"
+      bat "${mvnCMD} clean install package"
    }
    stage('Build Docker Iamge'){
-     sh 'docker build -t moolegovardhan/myorders:2.0.0 .'
+     bat 'docker build -t moolegovardhan/myorders:2.0.0 .'
    }
    
 }
