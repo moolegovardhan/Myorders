@@ -14,6 +14,10 @@ node{
       sh 'docker build -t moolegovardhan/myorders:3.0.0 .'
    }
     stage('Push Docker Iamge'){
+       withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerHubPwd')]) {
+          sh "docker login -u moolegovardhan -p ${dockerHubPwd}"
+     }
+      
       sh 'docker push moolegovardhan/myorders:3.0.0'
    }
 }
