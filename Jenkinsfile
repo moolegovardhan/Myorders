@@ -11,7 +11,7 @@ node{
       sh "${mvnCMD} clean install package"
    }
    stage('Build Docker Iamge'){
-      sh 'docker build -t moolegovardhan/myorders:2.0.0 .'
+      sh 'docker build -t moolegovardhan/myorders:3.0.0 .'
    }
    
 }
