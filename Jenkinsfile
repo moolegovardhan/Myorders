@@ -20,4 +20,10 @@ node{
       
       sh 'docker push moolegovardhan/myorders:3.0.0'
    }
+   stage('Run Container on Dev Server'){
+      def dockerRun = 'docker run -p 9090:9090 -d -name MyOrders moolegovardhan/myorders:3.0.0'
+      sshagent(['dev-server']) {
+         sh 'ssh -o StrictHostKeyChecking=no centos@52.22.254.168 ${dockerRun}'
+   } 
+   }
 }
