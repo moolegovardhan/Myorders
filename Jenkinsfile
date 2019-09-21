@@ -13,5 +13,7 @@ node{
    stage('Build Docker Iamge'){
       sh 'docker build -t moolegovardhan/myorders:3.0.0 .'
    }
-   
+    stage('Push Docker Iamge'){
+      sh 'docker push moolegovardhan/myorders:3.0.0'
+   }
 }
